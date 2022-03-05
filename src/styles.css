@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+*
+{
+  font-family: 'Work Sans', sans-serif;
+  font-weight:normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  height: 100%;
+}
+
+body
+{
+  height: 100%;
+  background-color: #EFEFEF;
+}
