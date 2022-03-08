@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&family=Roboto:wght@100;300;400;500;700;900&family=Zen+Kurenaido&display=swap');
+:root {
+    --color-primary: #EFEFEF;
+    --color-secondary: #FBB714;
+}
+
+* {
+    background-color: var(--color-primary);
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.port {
+  position: relative;
+  width: 100%;
+  height: 356px;
+  left: 0px;
+  }
+
+
+  i {
+      background-color: #FBB714;
+  }
+
+
+
+
+
+
+
+
+
+  main {
+
+      background: var(--color-primary)
+  }
+
+  .Categorias {
+      background: #fff;
+      margin-left: 3%;
+      margin-right: 3%;
+  }
+
+
+
+
+  .container {
+      background:#fff;
+      text-decoration: none;
+      display: flex;
+
+  }
+
+
+  .container-elemento a {
+      background:var(--color-primary);
+      width: 10%;
+      height: 10%;
+      text-decoration: none;
+      color: #000;
+      margin-top: 5%;
+
+  }
+
+  .container-elemento i {
+      float: right;
+      background: #EFEFEF;
+      margin-top: 5%;
+  }
+
+
+
+
+
+  .container-elemento span {
+      float: center;
+      font-weight:700;
+      font-size: 1.5rem;
+  }
+
+
+  .container-elemento {
+      display: inline-block;
+      text-align: center;
+      padding: 2rem;
+      width: 40%;
+      height: 20%;
+      margin: 3rem;
+      border-radius: 15%;
+      margin-top: 7%;
+  }
+
+  .cat-- {
+      margin-top: -15%;
+      width: 95%;
+      height: 95%;
+      background: var(--color-primary);
+  }
+
+  .cat {
+      width: 70%;
+      height: 70%;
+      background: var(--color-primary);
+  }
+
+  .title {
+      background: var(--color-primary);
+
+  }
+
+
+
+
+
+
+
+
+
+  h1{
+      background: #fff;
+      padding: 20px;
+  }
+
+  .Texto {
+      margin-top: 5rem;
+      padding: 20px;
+      margin-left: 3%;
+      margin-right: 3%;
+      background: #fff ;
+  }
+
+  p {
+      background: #fff;
+      padding: 20px;
+  }
