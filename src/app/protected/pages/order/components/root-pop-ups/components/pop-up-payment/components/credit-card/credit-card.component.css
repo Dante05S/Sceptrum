@@ -1,0 +1,79 @@
+.container-form {
+  padding: 25px 15px;
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.container-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input label {
+  font-size: 13px;
+}
+
+.input input {
+  margin-top: 10px;
+  padding: 12px;
+  padding-right: 20px;
+  outline: none;
+  border: none;
+  background-color: #f7f8f9;
+  border-bottom: 2px solid #e6ebf1;
+  -moz-appearance: textfield;
+}
+
+.input input::-webkit-inner-spin-button,
+.input input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input input:focus {
+  border-bottom: 2px solid #fbb714;
+  caret-color: #fbb714;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-btn {
+  text-align: center;
+}
+
+.container-btn button {
+  margin-top: 10px;
+  width: 100%;
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 0;
+  border: none;
+  background-color: #fbb714;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container-btn button:hover {
+  background-color: #ecad16;
+}
+
+@media screen and (min-width: 500px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .mr-1 {
+    margin-right: 15px;
+  }
+}

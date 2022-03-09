@@ -1,0 +1,167 @@
+.container-card
+{
+  display: flex;
+}
+
+.card
+{
+  border: 1px solid #e6ebf1;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.header
+{
+  padding: 25px;
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.header h3
+{
+  font-family: 'Shippori Antique B1', sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.body
+{
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+}
+
+.address
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.address span
+{
+  margin-top: 15px;
+  color: #FBB714;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.instructions
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.container-details
+{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container-details label
+{
+  font-size: 14px;
+}
+
+.container-details input
+{
+  margin-top: 10px;
+  padding: 15px 10px;
+  outline: none;
+  border: none;
+  background-color: #F7F8F9;
+  border-bottom: 2px solid #e6ebf1;
+}
+
+.container-details input:focus
+{
+  border-bottom: 2px solid #FBB714;
+  caret-color: #FBB714;
+}
+
+.btns
+{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.btns button
+{
+  font-weight: bold;
+  padding: 2px 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.btn-cancel
+{
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+.btn-save
+{
+  background-color: #FBB714;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.icon-delete
+{
+  position: absolute;
+  top: 41px;
+  right: 8px;
+  font-size: 16px;
+  color: #FBB714;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 430px)
+{
+
+  .address
+  {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .address span
+  {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 769px)
+{
+  section
+  {
+    margin-top: 25px;
+  }
+
+  .instructions
+  {
+    width: 50%;
+  }
+
+  .container-details input
+  {
+    height: 50px;
+  }
+
+}
+
+@media screen and (min-width: 1024px)
+{
+  .instructions
+  {
+    width: 35%;
+  }
+}

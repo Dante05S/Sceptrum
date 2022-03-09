@@ -1,0 +1,13 @@
+<div
+  *ngIf="popUpsService.getSelectedPopUp() != popUpModel.close"
+  class="panel-root"
+>
+  <div class="panel" (click)="close()"></div>
+  <app-pop-up-address
+    *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpAddress"
+  ></app-pop-up-address>
+
+  <app-pop-up-payment
+    *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpPayment"
+  ></app-pop-up-payment>
+</div>

@@ -1,0 +1,46 @@
+<section>
+  <article class="container-card">
+    <div class="card">
+      <div (click)="showOrders()" class="header">
+        <div class="name">
+          <div class="avatar">
+            <img src="https://img.freepik.com/vector-gratis/logo-restaurante-retro_23-2148474404.jpg" alt="">
+          </div>
+          <h3>Jade Pimont Pâtisserie</h3>
+        </div>
+
+        <div class="dropdown">
+          <p>1 producto</p>
+          <i class="material-icons" [ngClass]="{'rotate': activeDropdown}">keyboard_arrow_down</i>
+        </div>
+      </div>
+      <div class="body" [ngClass]="{'show-info': activeDropdown}">
+        <div class="info-products">
+          <div class="product">
+            <p>1u</p>
+            <div class="thumbail">
+              <img src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/D65K3MSUSJHB3AX5DTTVHK5X5E.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="detail-product">
+            <p>Tartaleta de Limón</p>
+            <div class="price">
+              <p class="total">$10.250</p>
+              <p class="ant-price">$12.800</p>
+            </div>
+            <div class="discount">
+              <i class="material-icons">local_offer</i>
+              <p>20%</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer">
+        <p class="estimate">Entrega estimada: </p>
+        <p>25 - 40 min</p>
+      </div>
+    </div>
+  </article>
+</section>

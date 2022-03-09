@@ -1,0 +1,211 @@
+section
+{
+  margin-top: 25px;
+}
+
+.container-card
+{
+  display: flex;
+}
+
+.card
+{
+  border: 1px solid #e6ebf1;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.header
+{
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+  border-bottom: 1px solid #e6ebf1;
+  align-items: center;
+}
+
+.header:hover
+{
+  cursor: pointer;
+}
+
+.name
+{
+  display: flex;
+  align-items: center;
+  //margin-right: 30px;
+}
+
+.avatar
+{
+  min-width: 36px;
+  max-width: 36px;
+  min-height: 36px;
+  max-height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img
+{
+  width: 100%;
+}
+
+.header h3
+{
+  font-family: 'Shippori Antique B1', sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  margin-left: 15px;
+}
+
+.dropdown
+{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown p
+{
+  text-align: right;
+  font-size: 14px;
+  color: #FBB714;
+  font-weight: bold;
+}
+
+.dropdown i
+{
+  margin-left: 5px;
+  color: #FBB714;
+  font-size: 24px;
+  transform: rotate(180);
+  transition: transform 0.3s ease 0s;
+}
+
+.body
+{
+  height: 0;
+  transition: height 0.3s ease 0s;
+  overflow: auto;
+}
+
+.info-products
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e6ebf1;
+  padding: 25px 15px;
+}
+
+.product
+{
+  display: flex;
+}
+
+.product p
+{
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.thumbail
+{
+  min-width: 40px;
+  max-width: 40px;
+  overflow: hidden;
+  margin: 0 15px;
+}
+
+.thumbail img
+{
+  object-fit: contain;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.detail-product
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.price
+{
+  display: flex;
+  margin-top: 10px;
+}
+
+.total
+{
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.ant-price
+{
+  color: #6a696e;
+  text-decoration: line-through;
+}
+
+.discount
+{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: #FBB714;
+}
+
+.discount p
+{
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.footer
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 15px;
+  align-items: center;
+}
+
+.estimate
+{
+  font-weight: bold;
+}
+
+.show-info
+{
+  height: 100%;
+}
+
+.rotate
+{
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 374px)
+{
+  .header
+  {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .name
+  {
+    margin-right: 30px;
+  }
+
+  .info-products
+  {
+    align-items: stretch;
+    justify-content:flex-start;
+  }
+}

@@ -1,0 +1,148 @@
+section
+{
+  margin-top: 25px;
+}
+
+.container-card
+{
+  display: flex;
+}
+
+.card
+{
+  border: 1px solid #e6ebf1;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.header
+{
+  padding: 25px;
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.header h3
+{
+  font-family: 'Shippori Antique B1', sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.body
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.body p
+{
+  font-weight: bold;
+}
+
+.select-tips
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.column
+{
+  display: flex;
+}
+
+.mr-1
+{
+  margin-right: 10px;
+}
+
+.mt-1
+{
+  margin-top: 15px;
+}
+
+.select-tips input[type="radio"]
+{
+  -webkit-appearance:none;
+}
+
+.select-tips label
+{
+  text-align: center;
+  width: 50px;
+  height: 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #e6ebf1;
+  font-size: 13px;
+}
+
+.select-tips label[for="5"]
+{
+  display: flex;
+  align-items: center;
+}
+
+.select-tips label i
+{
+  color: #2e2c36;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.select-tips label:hover, .select-tips label:hover i
+{
+  cursor: pointer;
+  background-color: rgba(251, 183, 20, 0.1);
+  color: #FBB714;
+  border: none;
+}
+
+.select-tips input[type="radio"]:checked + label
+{
+    background-color: rgba(251, 183, 20, 0.1);
+    border: 1px solid #FBB714;
+    color: #FBB714;
+    font-weight: bold;
+}
+
+.select-tips input[type="radio"]:checked + label i
+{
+  color: #FBB714;
+}
+
+@media screen and (min-width: 438px)
+{
+  .select-tips
+  {
+    flex-direction: row;
+  }
+
+  .select-tips label
+  {
+    margin-top: 0;
+    margin-right: 10px;
+  }
+
+  .column
+  {
+    margin: 0;
+  }
+
+  .select-tips label[for="5"]
+  {
+    margin: 0;
+  }
+
+  .body
+  {
+    text-align: left;
+  }
+
+}

@@ -1,4 +1,23 @@
 .order-info
 {
-  padding: 105px 15px;
+  padding: 25px 15px;
+  padding-bottom: 115px;
+}
+
+@media screen and (min-width: 769px)
+{
+  .order-info
+  {
+    padding: 105px 15px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px)
+{
+  .order-info
+  {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
