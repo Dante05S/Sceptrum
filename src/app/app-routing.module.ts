@@ -4,8 +4,36 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes =
 [
   {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+
+  {
+    path: 'home',
+    loadChildren: () => import('./public/pages/home/home.module').then(m => m.HomeModule)
+
+  },
+
+  {
+    path: 'login',
+    loadChildren: () => import('./public/auth/pages/login/login.module').then(m => m.LoginModule)
+  },
+
+  {
+    path: 'register',
+    loadChildren: () => import('./public/auth/pages/register/register.module').then(m => m.RegisterModule)
+  },
+
+  {
+    path: 'register-business',
+    loadChildren: () => import('./public/auth/pages/register-business/register-business.module').then(m => m.RegisterBusinessModule)
+  },
+
+  {
     path: 'order',
     loadChildren: () => import('./protected/pages/order/order.module').then(m => m.OrderModule)
+
   }
 ];
 
