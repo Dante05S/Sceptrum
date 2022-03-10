@@ -1,5 +1,5 @@
 <section>
-  <article>
+  <article class="container-card">
     <div class="card">
       <div class="header">
         <h3>Dirección de entrega</h3>
@@ -7,11 +7,33 @@
       <div class="body">
         <div class="address">
           <p>Tv. 56 #36, Bogotá, Colombia</p>
-          <span>Cambiar</span>
+          <span (click)="showAddress()">Cambiar</span>
         </div>
         <div class="instructions">
-          <p>Instrucciones de entrega (opcional)</p>
-          <input type="area" placeholder="Detalles adicionales...">
+          <div class="container-details">
+            <label>Instrucciones de entrega (opcional)</label>
+            <input
+              #details
+              (keyup)="(0)"
+              type="area"
+              placeholder="Detalles adicionales..."
+            />
+            <i
+              *ngIf="details.value.length !== 0"
+              (click)="deleteDetail()"
+              class="material-icons icon-delete"
+              >highlight_off</i
+            >
+          </div>
+
+          <div *ngIf="details.value !== detailsOrder" class="btns">
+            <button (click)="cancelDetail()" type="button" class="btn-cancel">
+              Cancelar
+            </button>
+            <button (click)="saveDetail()" type="button" class="btn-save">
+              Guardar
+            </button>
+          </div>
         </div>
       </div>
     </div>
