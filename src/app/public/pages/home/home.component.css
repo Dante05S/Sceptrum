@@ -4,12 +4,11 @@
     --color-secondary: #FBB714;
 }
 
-* {
-    background-color: var(--color-primary);
-}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 
 
 
@@ -35,7 +34,7 @@ body {
 
   main {
 
-      background: var(--color-primary)
+      background: #EFEFEF;
   }
 
   .Categorias {
@@ -44,6 +43,10 @@ body {
       margin-right: 3%;
   }
 
+   h2 {
+    margin-left: 5%;
+    font-size: 2.5rem;
+  }
 
 
 
@@ -68,7 +71,7 @@ body {
   .container-elemento i {
       float: right;
       background: #EFEFEF;
-      margin-top: 5%;
+      margin-top: 2%;
   }
 
 
@@ -91,6 +94,7 @@ body {
       margin: 3rem;
       border-radius: 15%;
       margin-top: 7%;
+      background: #EFEFEF;
   }
 
   .cat-- {
@@ -109,6 +113,7 @@ body {
   .title {
       background: var(--color-primary);
 
+
   }
 
 
@@ -117,11 +122,10 @@ body {
 
 
 
-
-
-  h1{
+  h1 {
       background: #fff;
       padding: 20px;
+      font-size: 2.5rem;
   }
 
   .Texto {
