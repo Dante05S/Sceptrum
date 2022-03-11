@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PopUpsService } from 'src/app/protected/services/pop-ups.service';
+import { PopUp } from 'src/app/protected/models/pop-up.model';
 
 @Component({
   selector: 'app-resume',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private popUpsService:PopUpsService) { }
 
   ngOnInit(): void {
+  }
+
+  showPopUp()
+  {
+    this.popUpsService.setSelectedPopUp(PopUp.popUpDetail);
   }
 
 }

@@ -1,0 +1,34 @@
+<div class="pop-up">
+  <div class="card">
+    <div class="header">
+      <div class="title">
+        <h3>Otro</h3>
+        <i (click)="closePopUp()" class="material-icons">highlight_off</i>
+      </div>
+    </div>
+    <div class="body">
+      <div class="container-tip">
+        <div class="amount">
+          <label for="">Ingresa el monto</label>
+          <input
+            #amount
+            (keyup)="(0)"
+            type="number"
+            [value]="popUpsService.getAmount()"
+            placeholder="$0"
+          />
+          <i
+            *ngIf="amount.value.length !== 0"
+            (click)="deleteAmount()"
+            class="material-icons icon-delete"
+            >highlight_off</i
+          >
+        </div>
+      </div>
+
+      <div class="container-btn">
+        <button (click)="saveTip()">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>

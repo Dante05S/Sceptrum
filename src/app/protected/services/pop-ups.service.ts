@@ -7,6 +7,7 @@ import { PopUp } from '../models/pop-up.model';
 export class PopUpsService {
   
   private selectedPopUp:PopUp = PopUp.close;
+  private amount:string = '';
 
   constructor() { }
 
@@ -23,5 +24,15 @@ export class PopUpsService {
   public closePopUp()
   {
     this.selectedPopUp = PopUp.close;
+  }
+
+  public setAmount(value:string)
+  {
+    this.amount = value;
+  }
+
+  public getAmount()
+  {
+    return this.amount;
   }
 }

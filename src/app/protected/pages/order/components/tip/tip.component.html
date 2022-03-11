@@ -7,23 +7,32 @@
       <div class="body">
         <p>La propina añadida se aplicará a cada orden.</p>
         <div class="select-tips">
-
           <div class="column">
-            <input type="radio" id="2" name="tip" checked>
+            <input type="radio" id="2" name="tip" checked />
             <label class="mr-1" for="2">$2000</label>
 
-            <input id="3" type="radio" name="tip">
+            <input id="3" type="radio" name="tip" />
             <label for="3">$3000</label>
           </div>
 
           <div class="column mt-1">
-            <input id="4" type="radio" name="tip">
+            <input id="4" type="radio" name="tip" />
             <label class="mr-1" for="4">$4000</label>
 
-            <input id="5" type="radio" name="tip">
-            <label for="5">Otro <i class="material-icons">edit</i></label>
+            <input id="5" type="radio" name="tip" />
+            <label (click)="showPopUp()" for="5"
+              ><span
+                *ngIf="
+                  popUpsService.getAmount().length !== 0 &&
+                    popUpsService.getAmount() !== '0';
+                  else elseTemplate
+                "
+                >{{ popUpsService.getAmount() }}</span
+              >
+              <ng-template #elseTemplate>Otro</ng-template>
+              <i class="material-icons">edit</i></label
+            >
           </div>
-
         </div>
       </div>
     </div>
