@@ -1,0 +1,33 @@
+<div class="pop-up">
+  <div class="card">
+    <div class="header">
+      <div class="title">
+        <h3>Detalle de resumen</h3>
+        <i (click)="closePopUp()" class="material-icons">highlight_off</i>
+      </div>
+    </div>
+
+    <div class="body">
+      <div *ngFor="let i of [1,2,3]" class="container-orders">
+        <app-restaurant></app-restaurant>
+
+        <div class="separator"></div>
+
+        <app-sub-total></app-sub-total>
+
+        <div class="separator"></div>
+
+        <app-discounts></app-discounts>
+
+        <div class="separator"></div>
+
+        <app-tip></app-tip>
+
+        <div class="separator"></div>
+
+        <app-total></app-total>
+        
+      </div>
+    </div>
+  </div>
+</div>

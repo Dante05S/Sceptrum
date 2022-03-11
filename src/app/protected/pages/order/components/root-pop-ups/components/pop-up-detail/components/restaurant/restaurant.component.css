@@ -1,0 +1,57 @@
+.restaurant {
+  padding: 25px 15px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  min-width: 36px;
+  max-width: 36px;
+  min-height: 36px;
+  max-height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.name p {
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.orders {
+  margin-top: 25px;
+}
+
+.detail {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.item p {
+  font-size: 16px;
+}
+
+.tr {
+  text-align: right;
+}
+
+.mr-1 {
+  margin-right: 15px;
+}
