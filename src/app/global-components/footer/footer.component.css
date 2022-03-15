@@ -10,38 +10,34 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-.fa {
+nav {
   background: #000;
-  width: 100%;
-  margin-top: 20%;
+  height: 3rem;
 }
-
 
 li {
   list-style: none;
 }
 
-.copy {
-  background-color: #000;
-  float: right;
-  color: #FBB714;
-
-}
 
 span {
   background: #000;
-
+  color: #FBB714;
+  margin-left: 44rem;
 }
 
 .gg-facebook, .gg-instagram, .gg-twitter {
   background-color: #000;
   color: #FBB714;
-  align-items:center;
-
-
+  margin-right: 3rem;
 }
 
-.ul2 {
-  margin-top: 0.2%;
-  margin-left: -5%;
+ul {
+  display: flex;
+  padding: 12px;
+  margin-left: 2.5rem;
+}
+
+footer {
+  background: #EFEFEF;
 }
