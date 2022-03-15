@@ -1,0 +1,93 @@
+<div class="pop-up">
+  <div class="card">
+    <div class="header">
+      <div class="title">
+        <h3>Mis direcciones</h3>
+        <i (click)="closePopUp()" class="material-icons">highlight_off</i>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="container-address">
+        <div class="add-address">
+          <p>
+            Ingresa tu ubicación para encontrar las mejores tiendas en tu zona
+          </p>
+          <div class="input">
+            <input
+              #address
+              (keyup)="(0)"
+              type="text"
+              placeholder="Escribe la dirección de entrega"
+              autocomplete="off"
+            />
+            <i
+              *ngIf="address.value.length !== 0"
+              (click)="delete()"
+              class="material-icons icon-delete"
+              >highlight_off</i
+            >
+          </div>
+          <div
+            *ngIf="address.value !== addressInput && address.value.length !== 0"
+            class="btn"
+          >
+            <button (click)="saveAddress()" type="button" class="btn-save">
+              Guardar dirección
+            </button>
+          </div>
+        </div>
+
+        <div class="list-address">
+          <div class="item">
+            <input
+              type="radio"
+              name="address"
+              id="Tv. 56 #36, Bogotá, Colombia"
+              checked
+            />
+            <label for="Tv. 56 #36, Bogotá, Colombia"
+              >Tv. 56 #36, Bogotá, Colombia
+            </label>
+
+            <div class="bg"></div>
+
+            <div class="container-actions">
+              <div (click)="editAddress()" class="icon">
+                <i class="material-icons">edit</i>
+              </div>
+              <div (click)="deleteAddress()" class="icon delete">
+                <i class="material-icons">delete</i>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <input
+              #rb
+              type="radio"
+              name="address"
+              id="Colombo Hebreo-KR 50 - CL 152A, Bogotá, Colombia"
+            />
+            <label for="Colombo Hebreo-KR 50 - CL 152A, Bogotá, Colombia"
+              >Colombo Hebreo-KR 50 - CL 152A, Bogotá, Colombia
+            </label>
+
+            <div class="bg"></div>
+
+            <div class="container-actions">
+              <div (click)="editAddress()" class="icon">
+                <i class="material-icons">edit</i>
+              </div>
+              <div (click)="deleteAddress()" class="icon delete">
+                <i class="material-icons">delete</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-pop-ups (codEvent)="getCod($event)" [codPopUp]="codPopUp"></app-pop-ups>

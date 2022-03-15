@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PopUpsService } from 'src/app/protected/services/pop-ups.service';
-import { PopUp } from 'src/app/protected/models/pop-up.model';
+import { PopUpsService } from 'src/app/services/pop-ups.service';
+import { PopUp } from 'src/app/models/pop-up.model';
 
 @Component({
   selector: 'app-tip',

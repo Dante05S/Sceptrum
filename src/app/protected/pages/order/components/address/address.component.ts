@@ -1,6 +1,6 @@
 import { Component, OnInit,ViewChild, Renderer2, ElementRef} from '@angular/core';
-import {PopUp} from '../../../../models/pop-up.model';
-import { PopUpsService } from '../../../../services/pop-ups.service';
+import {PopUp} from '../../../../../models/pop-up.model';
+import { PopUpsService } from '../../../../../services/pop-ups.service';
 
 @Component({
   selector: 'app-address',

@@ -1,0 +1,88 @@
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 5px 5px -4px rgb(51 41 39 / 40%);
+}
+
+.profile {
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e6ebf1;
+  justify-content: center;
+}
+
+.thumbail {
+  display: flex;
+  min-width: 55px;
+  max-width: 55px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.thumbail img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.user p {
+  font-size: 13px;
+  color: #9faab7;
+}
+
+.user h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  padding: 10px 5px;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.item {
+  padding: 5px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.item i {
+  color: #fbb714;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.item a {
+  text-decoration: none;
+  color: #7d7d7d;
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.item a:hover {
+  color: #fbb714;
+}
+
+@media screen and (min-width: 769px) {
+  .item a {
+    font-size: 15px;
+  }
+}

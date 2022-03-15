@@ -31,6 +31,11 @@ const routes: Routes =
   },
 
   {
+    path: 'account',
+    loadChildren: () => import('./protected/pages/account/account.module').then(m => m.AccountModule)
+  },
+
+  {
     path: 'order',
     loadChildren: () => import('./protected/pages/order/order.module').then(m => m.OrderModule)
 
