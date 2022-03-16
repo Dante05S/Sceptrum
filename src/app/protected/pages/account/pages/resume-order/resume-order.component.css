@@ -1,6 +1,5 @@
-.orders {
+.order {
   margin-top: 20px;
-  padding: 20px 0;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -10,13 +9,21 @@
 }
 
 .title {
-  padding: 0 15px;
-  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #e6ebf1;
 }
 
-.title h2 {
-  font-family: "Shippori Antique B1", sans-serif;
+.back {
+  padding: 15px;
+  display: flex;
+  border-right: 1px solid #e6ebf1;
+  color: #fbb714;
+  cursor: pointer;
+}
+
+.title h4 {
+  padding-left: 15px;
   font-weight: bold;
-  font-size: 28px;
+  font-family: "Shippori Antique B1", sans-serif;
 }

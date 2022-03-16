@@ -1,0 +1,189 @@
+.details {
+  padding: 0 5px;
+}
+
+.p-1 {
+  padding: 20px 10px;
+}
+
+.border {
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restaurant h3 {
+  font-weight: bold;
+}
+
+.restaurant p {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.status {
+  padding: 8px 15px;
+  background-color: #ff242517;
+  border-radius: 50px;
+  margin-left: 15px;
+}
+
+.status p {
+  color: #ff2425;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.domiciliary {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  justify-content: space-between;
+}
+
+.avatar {
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  margin-bottom: 5px;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.name p {
+  font-size: 15px;
+}
+
+.tl {
+  margin-left: 20px;
+}
+
+.domiciliary p span {
+  font-weight: bold;
+}
+
+.delivery h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.delivery p {
+  line-height: 22px;
+  font-size: 15px;
+}
+
+.resume {
+  font-size: 15px;
+}
+
+.resume h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-product {
+  display: flex;
+  align-items: center;
+}
+
+.thumbail {
+  min-width: 60px;
+  max-width: 60px;
+}
+
+.thumbail img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.info-product p {
+  margin: 0 15px;
+  margin-right: 20px;
+}
+
+.cg {
+  color: #7d7d7d;
+  font-size: 13px;
+}
+
+.fw {
+  font-weight: bold;
+}
+
+.payment h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background: rgb(41, 215, 132);
+  background: linear-gradient(
+    138deg,
+    rgba(41, 215, 132, 1) 0%,
+    rgba(35, 167, 125, 1) 55%
+  );
+  border-radius: 50%;
+}
+
+.icon i {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.method p {
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.total h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.total-detail {
+  list-style: none;
+  font-size: 15px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ml-1 {
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 920px) {
+  .details {
+    padding: 20px 90px;
+  }
+}

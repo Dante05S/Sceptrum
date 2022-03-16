@@ -1,0 +1,160 @@
+.order {
+  padding: 0 20px;
+  padding-top: 20px;
+}
+
+.card {
+  border: 1px solid #e6ebf1;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 20px 10px;
+  padding-top: 50px;
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 15px;
+  background-color: #ff242517;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.status p {
+  color: #ff2425;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.thumbail {
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.thumbail img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.name-product {
+  margin-top: 15px;
+}
+
+.name {
+  font-size: 14px;
+  color: #7d7d7d;
+  font-weight: bold;
+  text-align: center;
+}
+
+.price {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.body {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  min-width: 36px;
+  max-width: 36px;
+  min-height: 36px;
+  max-height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.restaurant .name {
+  margin-top: 5px;
+}
+
+.restaurant .name h3 {
+  font-family: "Shippori Antique B1", sans-serif;
+  color: #000000;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.info-order {
+  padding: 0 10px;
+  margin-top: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+.item {
+  margin: 10px 0;
+}
+
+.item p {
+  font-size: 15px;
+}
+
+.item p span {
+  color: #7d7d7d;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.btn a {
+  width: 155px;
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 14px;
+  border: none;
+  background-color: #fbb714;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn a:hover {
+  background-color: #ecad16;
+}
+
+@media screen and (min-width: 769px) {
+  .card {
+    flex-direction: row;
+  }
+  .header {
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid #e6ebf1;
+  }
+}
