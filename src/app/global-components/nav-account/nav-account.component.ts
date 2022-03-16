@@ -3,11 +3,11 @@ import { PopUpsService } from 'src/app/services/pop-ups.service';
 import { PopUp } from 'src/app/models/pop-up.model';
 
 @Component({
-  selector: 'app-resume',
-  templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.css']
+  selector: 'app-nav-account',
+  templateUrl: './nav-account.component.html',
+  styleUrls: ['./nav-account.component.css']
 })
-export class ResumeComponent implements OnInit {
+export class NavAccountComponent implements OnInit {
 
   constructor(private popUpsService:PopUpsService) { }
 
@@ -16,7 +16,7 @@ export class ResumeComponent implements OnInit {
 
   showPopUp()
   {
-    this.popUpsService.setSelectedPopUp(PopUp.popUpDetail);
+    this.popUpsService.setSelectedPopUp(PopUp.popUpAddAddress);
   }
 
 }

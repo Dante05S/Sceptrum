@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {GlobalComponentsModule} from '../../../global-components/global-components.module';
-import {RootPopUpsModule} from './components/root-pop-ups/root-pop-ups.module';
+import { RootPopUpsModule } from 'src/app/global-components/root-pop-ups/root-pop-ups.module';
 import { OrderRoutingModule } from './order-routing.module';
 import { OrderComponent } from './order.component';
 import { AddressComponent } from './components/address/address.component';
@@ -24,8 +24,8 @@ import { BtnOrderComponent } from './components/btn-order/btn-order.component';
   ],
   imports: [
     CommonModule,
-    GlobalComponentsModule,
     RootPopUpsModule,
+    GlobalComponentsModule,
     OrderRoutingModule
   ]
 })

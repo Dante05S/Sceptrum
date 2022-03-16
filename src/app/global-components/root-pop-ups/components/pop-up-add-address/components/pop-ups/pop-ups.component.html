@@ -1,0 +1,5 @@
+<div *ngIf="codPopUp != 0" class="root">
+  <div (click)="close()" class="panel"></div>
+  <app-edit (codEvent)="close()" *ngIf="codPopUp == 1"></app-edit>
+  <app-delete (codEvent)="close()" *ngIf="codPopUp == 2"></app-delete>
+</div>

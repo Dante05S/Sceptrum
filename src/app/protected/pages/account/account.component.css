@@ -1,0 +1,15 @@
+.account-root {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.root-side-bar {
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .account-root {
+    padding: 20px 50px;
+  }
+}

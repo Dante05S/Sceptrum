@@ -1,0 +1,25 @@
+<div
+  *ngIf="popUpsService.getSelectedPopUp() != popUpModel.close"
+  class="panel-root"
+>
+  <div class="panel" (click)="close()"></div>
+  <app-pop-up-address
+    *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpAddress"
+  ></app-pop-up-address>
+
+  <app-pop-up-payment
+    *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpPayment"
+  ></app-pop-up-payment>
+
+  <app-pop-up-tip
+    *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpTip"
+  ></app-pop-up-tip>
+
+  <app-pop-up-detail
+    *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpDetail"
+  ></app-pop-up-detail>
+
+  <app-pop-up-add-address
+    *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpAddAddress"
+  ></app-pop-up-add-address>
+</div>

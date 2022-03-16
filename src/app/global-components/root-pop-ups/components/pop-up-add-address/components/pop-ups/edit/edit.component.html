@@ -1,0 +1,33 @@
+<div class="pop-up">
+  <div class="card">
+    <div class="header">
+      <div class="title">
+        <h3>Editar dirección</h3>
+        <i (click)="closePopUp()" class="material-icons">highlight_off</i>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="edit-address">
+        <div class="input">
+          <input
+            #address
+            (keyup)="(0)"
+            type="text"
+            placeholder="Escribe la dirección de entrega"
+          />
+          <i
+            *ngIf="address.value.length !== 0"
+            (click)="deleteAddress()"
+            class="material-icons icon-delete"
+            >highlight_off</i
+          >
+        </div>
+
+        <div class="btn">
+          <button>Guardar dirección</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
