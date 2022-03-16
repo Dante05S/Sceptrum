@@ -1,0 +1,82 @@
+.contenedor{
+    width: 90%;
+    height: 18rem;
+    background: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.cont-img{
+    float: right;
+    margin-right: 5rem;
+}
+
+.cont-text{
+    margin-left: 7%;
+
+
+}
+
+span{
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+}
+
+
+.port{
+    width: 47%;
+    height: 42%;
+    position: relative;
+    border-radius: 2rem;
+    margin-top: 7%;
+    margin-right: 7%;
+    float: right;
+}
+
+
+
+
+.img-tar{
+    width: 40%;
+    margin-top: 2%;
+    border-radius: 20%;
+}
+
+.tarjeta {
+    display: flex;
+    padding: 1rem;
+    width: 42%;
+    border: 2px solid #000;
+    border-radius: 1rem;
+    flex-direction: row;
+}
+
+.material-icons{
+    float:right;
+    color: #FBB714;
+}
+
+.con-tar{
+    display: flexbox;
+    flex-direction: row;
+    padding: 3%;
+    width: 84%;
+    height: 100%;
+    background: #fff;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 8%;
+}
+
+.cont-txt {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+b {
+  display: inline;
+  color: #FBB714;
+}

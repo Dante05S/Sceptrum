@@ -1,0 +1,74 @@
+
+
+span {
+  font-weight: 1000;
+  font-size: 2.5rem;
+}
+
+.titulo {
+  text-align: center;
+}
+
+main {
+
+  background: #EFEFEF;
+}
+
+section {
+  background: #fff;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+
+
+
+.container {
+  background:#fff;
+  text-decoration: none;
+  display: flex;
+
+}
+
+
+.container-elemento a {
+  background: #fff;
+  width: 10%;
+  height: 10%;
+  text-decoration: none;
+  color: #000;
+
+}
+
+
+
+
+
+
+.container-elemento span {
+  float: center;
+  font-weight:700;
+  font-size: 1.5rem;
+}
+
+
+.container-elemento {
+  display: inline-block;
+  text-align: center;
+  padding: 2rem;
+  width: 25%;
+  height: 5%;
+  margin: 3rem;
+  background: #ffffff;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15%;
+
+}
+
+
+
+

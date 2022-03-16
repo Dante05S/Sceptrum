@@ -1,2 +1,27 @@
-<p>restaurants works!</p>
 <app-nav-first></app-nav-first>
+
+<div class="titulo" *ngFor="let empresa of Empresas">
+  <span><br> <br> <br> {{empresa.tipo}}</span>
+</div>
+
+<main> <br> <br> <br> <br> <br>
+  <section>
+      <div class="container" *ngFor="let empresa of Empresas">
+        <div class="container-elemento">
+            <a href="#" >
+              <img src="../../../../../assets/img/Imagenes/el-corral-hamburguesas-corralera..jpeg">
+              <span class="title"><b>{{empresa.nombre}}</b></span>
+            </a>
+        </div>
+      </div>  <br>
+  </section> <br>
+</main>
+
+
+
+
+
+
+
+
+<app-footer></app-footer>
