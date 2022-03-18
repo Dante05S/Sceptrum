@@ -1,58 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&family=Roboto:wght@100;300;400;500;700;900&family=Zen+Kurenaido&display=swap');
-
-
-* {
-    background-color: #7e7e7e;
+.nav {
+  background: #000000;
+  color: #fbb714;
+  padding: 15px;
 }
-body {
-    font-family: 'Roboto', sans-serif;
-}
-.menu {
-  width: 100%;
-  margin: 0 auto;
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .logo {
+  width: 55px;
+}
+
+.logo a img {
   width: 100%;
-  height: 44px;
-  float: left;
-  padding: 8px;
-  background: #000;
-  text-decoration: none;
-  width: 98.8%;
 }
 
-svg {
-  background:#000;
-  margin-left: 3.5%;
+.contain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-
-nav {
-  margin-right: 5%;
-  float:right;
-  background: #000;
-  height: 1rem;
-}
-
-nav ul li {
+.nav-menu {
   list-style: none;
-  margin-left: 50px;
-  padding: 12px 0;
-  float: left;
-  position: relative;
-  background: #000;
+  display: flex;
+  align-items: center;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #FBB714;
-  font-weight: bold;
-  background: #000;
+.item {
+  margin: 0 15px;
 }
 
-.material-icons {
-  background: #000;
+.item a {
+  cursor: pointer;
+}
 
+.shopping-cart {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  background-color: #fbb714;
+  padding: 4px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.shopping-cart:hover {
+  background-color: #ecad16;
+}
+
+.shopping-cart i {
+  font-size: 16px;
+}
+
+.shopping-cart p {
+  font-size: 15px;
+  margin-left: 3px;
 }
