@@ -1,0 +1,140 @@
+.pop-up {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  animation: showPopUp 0.5s;
+}
+
+.card {
+  border: 1px solid #e6ebf1;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.header {
+  padding: 10px 15px;
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.header h3 {
+  font-family: "Shippori Antique B1", sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title i {
+  color: #2e2c36;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.body {
+  padding: 25px 15px;
+  padding-bottom: 30px;
+}
+
+.container-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.section label {
+  font-size: 13px;
+  color: #6a696e;
+}
+
+.section input {
+  margin-top: 10px;
+  padding: 12px;
+  padding-right: 20px;
+  outline: none;
+  border: none;
+  background-color: #f7f8f9;
+  border-bottom: 2px solid #e6ebf1;
+  -moz-appearance: textfield;
+}
+
+.section input:focus {
+  border-bottom: 2px solid #fbb714;
+  caret-color: #fbb714;
+}
+
+.icon-delete {
+  position: absolute;
+  top: 37px;
+  right: 8px;
+  font-size: 16px;
+  color: #fbb714;
+  cursor: pointer;
+}
+
+.container-btns {
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.container-btns button {
+  width: 142px;
+  height: 28px;
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.save {
+  background-color: #fbb714;
+}
+
+.delete {
+  background-color: #efefef;
+}
+
+.delete:hover {
+  background-color: #d6d6d6;
+}
+
+.save:hover {
+  background-color: #ecad16;
+}
+
+@keyframes showPopUp {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .pop-up {
+    position: relative;
+    width: 600px;
+  }
+}

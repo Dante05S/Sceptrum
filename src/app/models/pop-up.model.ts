@@ -4,6 +4,11 @@ export enum PopUp
     popUpAddress,
     popUpPayment,
     popUpTip,
+    popUpName,
     popUpDetail,
-    popUpAddAddress
+    popUpAddAddress,
+    popUpAddSection,
+    popUpAddProduct,
+    popUpAddExtra,
+    popUpAddOption
 }

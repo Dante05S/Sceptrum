@@ -1,0 +1,40 @@
+<div class="info-product">
+  <div class="title">
+    <h4>Información del producto</h4>
+    <div (click)="showPopUp()" class="icon">
+      <i class="material-icons">edit</i>
+    </div>
+  </div>
+
+  <div class="header">
+    <div class="name">
+      <h3>{{ popUpsService.getName() }}</h3>
+    </div>
+    <div class="img-product">
+      <img
+        src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/D65K3MSUSJHB3AX5DTTVHK5X5E.jpg"
+        alt=""
+      />
+      <div class="icon photo">
+        <i class="material-icons">photo_camera</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="cont-fields">
+    <div class="field">
+      <label for="">Precio del producto</label>
+      <input type="number" placeholder="$0" />
+    </div>
+
+    <div class="field">
+      <label for="">Descuento</label>
+      <input type="number" placeholder="%0" />
+    </div>
+
+    <div class="field">
+      <label for="">Descripción del producto</label>
+      <textarea placeholder="Descripción..."></textarea>
+    </div>
+  </div>
+</div>

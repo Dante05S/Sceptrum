@@ -1,0 +1,27 @@
+<div class="section">
+  <div class="name-extra">
+    <div class="top">
+      <h4>{{ section.name }}</h4>
+      <div *ngIf="section.required" class="required"><p>Obligatorio</p></div>
+    </div>
+    <div *ngIf="section.maxOp !== 0" class="bottom">
+      <p>Selecciona máximo {{ section.maxOp }} opciones</p>
+    </div>
+  </div>
+
+  <div class="actions">
+    <div (click)="updateExtra()" class="icon">
+      <i class="material-icons">edit</i>
+    </div>
+    <div class="add-option">
+      <div (click)="addOption()" class="btn">
+        <div class="icon">
+          <i class="material-icons">add</i>
+        </div>
+        <p>Agregar opción</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,41 @@
+<div class="menu">
+  <div class="title bbg">
+    <h2>Menu y precios</h2>
+  </div>
+
+  <div class="add-section">
+    <div (click)="addSection()" class="btn">
+      <div class="icon">
+        <i class="material-icons">add</i>
+      </div>
+      <p>Agregar sección</p>
+    </div>
+  </div>
+
+  <div class="sections">
+    <div class="cont-section">
+      <div class="title header">
+        <div class="name-section">
+          <h3>Sweet Brunch</h3>
+          <div (click)="updateSection()" class="icon">
+            <i class="material-icons">edit</i>
+          </div>
+        </div>
+        <div class="add-product">
+          <div (click)="addProduct()" class="btn">
+            <div class="icon">
+              <i class="material-icons">add</i>
+            </div>
+            <p>Agregar Producto</p>
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <app-product-template
+          *ngFor="let i of [1, 2, 3, 4]"
+          class="root-product"
+        ></app-product-template>
+      </div>
+    </div>
+  </div>
+</div>

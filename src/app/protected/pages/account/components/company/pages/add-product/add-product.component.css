@@ -1,0 +1,29 @@
+.add {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 5px 5px -4px rgb(51 41 39 / 40%);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.back {
+  padding: 15px;
+  display: flex;
+  border-right: 1px solid #e6ebf1;
+  color: #fbb714;
+  cursor: pointer;
+}
+
+.title h4 {
+  padding-left: 15px;
+  font-weight: bold;
+  font-family: "Shippori Antique B1", sans-serif;
+}

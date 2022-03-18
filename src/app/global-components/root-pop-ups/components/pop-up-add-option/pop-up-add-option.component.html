@@ -1,0 +1,66 @@
+<div class="pop-up">
+  <div class="card">
+    <div class="header">
+      <div class="title">
+        <h3 *ngIf="!popUpsService.isEdit(); else elseTemplate">Nueva opción</h3>
+        <i (click)="closePopUp()" class="material-icons">highlight_off</i>
+      </div>
+    </div>
+    <div class="body">
+      <form [formGroup]="formOption" (ngSubmit)="saveOption()" class="form">
+        <div class="cont-fields">
+          <div class="field">
+            <label for="">Ingrese el nombre de la opción</label>
+            <input
+              id="name"
+              formControlName="name"
+              type="text"
+              placeholder="Nombre de la opción"
+            />
+            <i
+              *ngIf="formOption.get('name')?.value.length !== 0"
+              (click)="deleteName()"
+              class="material-icons icon-delete"
+              >highlight_off</i
+            >
+          </div>
+
+          <div class="field">
+            <label for="">Ingrese el valor adicional de la opción</label>
+            <input
+              type="number"
+              formControlName="val"
+              placeholder="Valor adicional"
+              value="$0"
+            />
+          </div>
+        </div>
+
+        <div class="container-btns">
+          <button
+            type="button"
+            *ngIf="popUpsService.isEdit()"
+            (click)="deleteOption()"
+            class="delete"
+          >
+            Eliminar
+          </button>
+          <button type="submit" class="save">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<ng-template #elseTemplate>
+  <h3>Editar opción</h3>
+</ng-template>
+
+<div *ngIf="show" class="root">
+  <div (click)="close()" class="panel"></div>
+  <app-pop-up-confirm
+    (confirmEvent)="confirmDelete($event)"
+    [title]="title"
+    [text]="text"
+  ></app-pop-up-confirm>
+</div>

@@ -1,0 +1,40 @@
+.info {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-btn {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.btn button {
+  width: 100%;
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 0;
+  border: none;
+  background-color: #fbb714;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background-color: #ecad16;
+}
+
+@media screen and (min-width: 769px) {
+  .btn {
+    width: 343px;
+  }
+}

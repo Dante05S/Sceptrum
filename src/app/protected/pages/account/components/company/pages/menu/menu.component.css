@@ -1,0 +1,138 @@
+.menu {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 5px 5px -4px rgb(51 41 39 / 40%);
+  padding-bottom: 20px;
+}
+
+.bbg {
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.title {
+  padding: 20px 15px;
+}
+
+.title h2 {
+  font-family: "Shippori Antique B1", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.add-section {
+  padding: 35px 15px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover p {
+  color: #fbb714;
+}
+
+.btn p {
+  font-family: "Shippori Antique B1", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.2s ease 0s;
+}
+
+.icon {
+  display: flex;
+  background-color: #fbb714;
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: 8px;
+}
+
+.icon i {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.cont-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-section .title {
+  padding: 15px;
+}
+
+.title h3 {
+  font-family: "Shippori Antique B1", sans-serif;
+  color: #000000;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.name-section {
+  display: flex;
+  align-items: center;
+}
+
+.name-section .icon {
+  padding: 6px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.name-section .icon:hover {
+  background-color: #ecad16;
+}
+
+.name-section .icon i {
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.add-product .btn p {
+  font-size: 14px;
+  display: none;
+}
+
+.add-product .icon {
+  margin-left: 15px;
+}
+
+.add-product .icon i {
+  font-size: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.root-product {
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .add-product .btn p {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .root-product {
+    width: 50%;
+  }
+}

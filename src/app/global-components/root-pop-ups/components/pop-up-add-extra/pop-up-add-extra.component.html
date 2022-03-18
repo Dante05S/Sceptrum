@@ -1,0 +1,99 @@
+<div class="pop-up">
+  <div class="card">
+    <div class="header">
+      <div class="title">
+        <h3 *ngIf="!popUpsService.isEdit(); else elseTemplate">
+          Nuevo añadido
+        </h3>
+        <i (click)="closePopUp()" class="material-icons">highlight_off</i>
+      </div>
+    </div>
+    <div class="body">
+      <form [formGroup]="formExtra" (ngSubmit)="saveExtra()" class="form">
+        <div class="cont-fields">
+          <div class="field-required">
+            <label for="required" class="switch">
+              <input id="required" formControlName="required" type="checkbox" />
+              <div class="slider round"></div>
+            </label>
+            <p>Obligatorio</p>
+          </div>
+
+          <div class="field">
+            <label for="">Ingrese el nombre de la sección</label>
+            <input
+              id="name"
+              formControlName="name"
+              type="text"
+              placeholder="Nombre de la sección"
+            />
+            <i
+              *ngIf="formExtra.get('name')?.value.length !== 0"
+              (click)="deleteName()"
+              class="material-icons icon-delete"
+              >highlight_off</i
+            >
+          </div>
+
+          <div class="types">
+            <div class="option">
+              <input
+                id="op1"
+                formControlName="type"
+                name="type"
+                type="radio"
+                [value]="1"
+              />
+              <label for="op1">Opción unica</label>
+            </div>
+            <div class="option">
+              <input
+                id="op2"
+                formControlName="type"
+                name="type"
+                type="radio"
+                [value]="2"
+              />
+              <label for="op2">Opción multiple</label>
+            </div>
+          </div>
+
+          <div *ngIf="formExtra.get('type')?.value === 2" class="field">
+            <label for="">Ingrese el maximo de opciones a seleccionar</label>
+            <input
+              type="number"
+              formControlName="maxOp"
+              placeholder="Maximo de opciones"
+              value="0"
+            />
+          </div>
+        </div>
+
+        <div class="container-btns">
+          <button
+            type="button"
+            *ngIf="popUpsService.isEdit()"
+            (click)="deleteExtra()"
+            class="delete"
+          >
+            Eliminar
+          </button>
+          <button type="submit" class="save">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<ng-template #elseTemplate>
+  <h3>Editar añadido</h3>
+</ng-template>
+
+<div *ngIf="show" class="root">
+  <div (click)="close()" class="panel"></div>
+  <app-pop-up-confirm
+    (confirmEvent)="deleteConfirm($event)"
+    [title]="title"
+    [text]="text"
+  ></app-pop-up-confirm>
+</div>

@@ -1,0 +1,116 @@
+.section h4 {
+  font-family: "Shippori Antique B1", sans-serif;
+  color: #000000;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.icon {
+  cursor: pointer;
+  display: flex;
+  background-color: #fbb714;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.icon:hover {
+  background-color: #ecad16;
+}
+
+.icon i {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.extra-product {
+  padding: 20px 0;
+}
+
+.add-extra {
+  padding: 35px 15px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.btn {
+  display: flex;
+  cursor: pointer;
+}
+
+.btn:hover p {
+  color: #fbb714;
+}
+
+.btn p {
+  font-family: "Shippori Antique B1", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.2s ease 0s;
+}
+
+.btn .icon {
+  margin-right: 8px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-option .btn p {
+  font-size: 14px;
+  display: none;
+}
+
+.name-extra {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.bottom {
+  margin-top: 5px;
+}
+
+.name-extra p {
+  color: #6a696e;
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.required {
+  width: fit-content;
+  font-size: 11px;
+  border-radius: 5px;
+  background-color: #e6ebf1;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 550px) {
+  .add-option .btn p {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .top {
+    flex-direction: row;
+  }
+
+  .required {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+}

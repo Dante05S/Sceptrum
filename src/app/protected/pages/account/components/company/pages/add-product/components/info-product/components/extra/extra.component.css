@@ -1,0 +1,78 @@
+.title {
+  padding: 20px 0;
+}
+
+.title h4 {
+  font-family: "Shippori Antique B1", sans-serif;
+  color: #000000;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.icon {
+  cursor: pointer;
+  display: flex;
+  background-color: #fbb714;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.icon:hover {
+  background-color: #ecad16;
+}
+
+.icon i {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.extra-product {
+  padding: 20px 0;
+}
+
+.extra-product .title {
+  padding: 0 15px;
+}
+
+.add-extra {
+  padding: 35px 15px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e6ebf1;
+}
+
+.btn {
+  display: flex;
+  cursor: pointer;
+}
+
+.btn:hover p {
+  color: #fbb714;
+}
+
+.btn p {
+  font-family: "Shippori Antique B1", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.2s ease 0s;
+}
+
+.add-extra .btn .icon {
+  margin-right: 8px;
+}
+
+.extras {
+  padding-top: 10px;
+}
+
+.cont-extra {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.extra {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}

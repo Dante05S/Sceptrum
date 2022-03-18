@@ -1,0 +1,21 @@
+<div class="pop-up">
+  <div class="card">
+    <div class="header">
+      <div class="title">
+        <h3>{{ title }}</h3>
+        <i (click)="close()" class="material-icons">highlight_off</i>
+      </div>
+    </div>
+
+    <div class="body">
+      <p>{{ text }}</p>
+    </div>
+
+    <div class="footer">
+      <div class="container-btns">
+        <button (click)="close()" class="cancel">Cancelar</button>
+        <button (click)="confirm()" class="accept">Sí, seguro</button>
+      </div>
+    </div>
+  </div>
+</div>

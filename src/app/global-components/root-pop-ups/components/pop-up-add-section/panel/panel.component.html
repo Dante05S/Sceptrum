@@ -1,0 +1,8 @@
+<div *ngIf="show" class="root">
+  <div (click)="close()" class="panel"></div>
+  <app-pop-up-confirm
+    (closeEvent)="close()"
+    [title]="title"
+    [text]="text"
+  ></app-pop-up-confirm>
+</div>

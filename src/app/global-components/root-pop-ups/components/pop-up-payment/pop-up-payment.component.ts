@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, OnInit,Inject,Renderer2 } from '@angular/core';
-import { PopUpsService } from 'src/app/services/pop-ups.service';
+import { PopUpsService } from 'src/app/services/pop-ups/pop-ups.service';
 
 @Component({
   selector: 'app-pop-up-payment',

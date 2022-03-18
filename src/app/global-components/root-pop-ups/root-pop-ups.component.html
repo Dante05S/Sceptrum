@@ -15,6 +15,10 @@
     *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpTip"
   ></app-pop-up-tip>
 
+  <app-pop-up-name
+    *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpName"
+  ></app-pop-up-name>
+
   <app-pop-up-detail
     *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpDetail"
   ></app-pop-up-detail>
@@ -22,4 +26,16 @@
   <app-pop-up-add-address
     *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpAddAddress"
   ></app-pop-up-add-address>
+
+  <app-pop-up-add-section
+    *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpAddSection"
+  ></app-pop-up-add-section>
+
+  <app-pop-up-add-extra
+    *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpAddExtra"
+  ></app-pop-up-add-extra>
+
+  <app-pop-up-add-option
+    *ngIf="popUpsService.getSelectedPopUp() == popUpModel.popUpAddOption"
+  ></app-pop-up-add-option>
 </div>

@@ -1,0 +1,26 @@
+<div class="extra-product">
+  <div class="title">
+    <h4>Añadidos del producto</h4>
+  </div>
+
+  <div class="add-extra">
+    <div (click)="addExtra()" class="btn">
+      <div class="icon">
+        <i class="material-icons">add</i>
+      </div>
+      <p>Agregar un añadido</p>
+    </div>
+  </div>
+
+  <div class="extras">
+    <div class="cont-extra">
+      <div *ngFor="let section of sections" class="extra">
+        <app-extra-template [section]="section"></app-extra-template>
+
+        <div class="options">
+          <app-option-template *ngFor="let option of section.options" [option]="option" [type]="section.type" [index]="section.id"></app-option-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

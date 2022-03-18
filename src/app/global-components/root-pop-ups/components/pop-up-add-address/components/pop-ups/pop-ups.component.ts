@@ -7,6 +7,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class PopUpsComponent implements OnInit {
 
+  title:string = 'Eliminar esta dirección'
+  text:string = '¿Estás seguro de que deseas eliminar esta dirección?'
   @Input() codPopUp:number = 0;
   @Output() codEvent = new EventEmitter<number>();
 

@@ -1,0 +1,34 @@
+<div class="pop-up">
+  <div class="card">
+    <div class="header">
+      <div class="title">
+        <h3>Cambiar nombre</h3>
+        <i (click)="closePopUp()" class="material-icons">highlight_off</i>
+      </div>
+    </div>
+    <div class="body">
+      <div class="container-name">
+        <div class="name">
+          <label for="">Ingresa el nombre del producto</label>
+          <input
+            #name
+            (keyup)="(0)"
+            type="text"
+            [value]="popUpsService.getName()"
+            placeholder="Nombre del producto"
+          />
+          <i
+            *ngIf="name.value.length !== 0"
+            (click)="deleteName()"
+            class="material-icons icon-delete"
+            >highlight_off</i
+          >
+        </div>
+      </div>
+
+      <div class="container-btn">
+        <button (click)="saveName()">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>

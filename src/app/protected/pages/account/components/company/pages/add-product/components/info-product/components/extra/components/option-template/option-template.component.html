@@ -1,0 +1,21 @@
+<div class="field">
+  <div class="title">
+    <div (click)="updateOption()" class="icon">
+      <i class="material-icons">edit</i>
+    </div>
+    <div class="name">
+      <p class="text">{{ option.name }}</p>
+      <p *ngIf="option.val !== 0" class="val">+ ${{ option.val }}</p>
+    </div>
+  </div>
+  <div class="input">
+    <input
+      [name]="index"
+      [id]="getId()"
+      [type]="getInput()"
+      [value]="option.name"
+    />
+    <label [for]="getId()"></label>
+    <i *ngIf="type === 2" class="material-icons">done</i>
+  </div>
+</div>

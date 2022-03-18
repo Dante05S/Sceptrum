@@ -1,0 +1,45 @@
+<div class="pop-up">
+  <div class="card">
+    <div class="header">
+      <div class="title">
+        <h3 *ngIf="!popUpsService.isEdit(); else elseTemplate">
+          Nueva sección
+        </h3>
+        <ng-template #elseTemplate><h3>Editar sección</h3></ng-template>
+        <i (click)="closePopUp()" class="material-icons">highlight_off</i>
+      </div>
+    </div>
+    <div class="body">
+      <div class="container-section">
+        <div class="section">
+          <label for="">Ingrese el nombre de la sección</label>
+          <input
+            #section
+            (keyup)="(0)"
+            type="text"
+            placeholder="Nombre de la sección"
+          />
+          <i
+            *ngIf="section.value.length !== 0"
+            (click)="deleteText()"
+            class="material-icons icon-delete"
+            >highlight_off</i
+          >
+        </div>
+      </div>
+
+      <div class="container-btns">
+        <button
+          *ngIf="popUpsService.isEdit()"
+          (click)="deleteSection()"
+          class="delete"
+        >
+          Eliminar
+        </button>
+        <button (click)="saveSection()" class="save">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-panel (closeEvent)="closeEvent()" [show]="showPopUp"></app-panel>

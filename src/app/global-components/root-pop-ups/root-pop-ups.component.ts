@@ -1,6 +1,6 @@
 import { Component, OnInit,Renderer2,Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { PopUpsService } from 'src/app/services/pop-ups.service';
+import { PopUpsService } from 'src/app/services/pop-ups/pop-ups.service';
 import { PopUp } from 'src/app/models/pop-up.model';
 
 @Component({

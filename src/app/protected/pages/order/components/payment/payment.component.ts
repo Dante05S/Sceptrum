@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PopUp } from 'src/app/models/pop-up.model';
-import { PopUpsService } from 'src/app/services/pop-ups.service';
+import { PopUpsService } from 'src/app/services/pop-ups/pop-ups.service';
 
 @Component({
   selector: 'app-payment',
