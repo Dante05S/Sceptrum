@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PopUpsService } from 'src/app/services/pop-ups/pop-ups.service';
 import { PopUp } from 'src/app/models/pop-up.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -9,7 +10,7 @@ import { PopUp } from 'src/app/models/pop-up.model';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private popUpsService:PopUpsService) { }
+  constructor(private popUpsService:PopUpsService,private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -27,7 +28,7 @@ export class MenuComponent implements OnInit {
   }
 
   addProduct(){
-    
+      this.router.navigate(['/account/menu/add-product']);
   }
 
 }

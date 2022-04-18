@@ -7,18 +7,19 @@ import { ResumeOrderComponent } from './components/user/pages/resume-order/resum
 import { ProfileCompanyComponent } from './components/company/pages/profile-company/profile-company.component';
 import { MenuComponent } from './components/company/pages/menu/menu.component';
 import { AddProductComponent } from './components/company/pages/add-product/add-product.component';
+import { VigilantGuard } from 'src/app/guards/vigilant.guard';
 
 const routes: Routes = [
   {
     path: '',
     component: AccountComponent,
     children:[
-      {path: 'profile-user',component: ProfileComponent},
-      {path: 'orders',component:LastOrdersComponent},
-      {path: 'orders/:id',component:ResumeOrderComponent},
-      {path: 'profile-company',component:ProfileCompanyComponent},
-      {path: 'menu', component:MenuComponent},
-      {path: 'menu/add-product', component:AddProductComponent},
+      {path: 'profile-user',component: ProfileComponent,canActivate:[VigilantGuard]},
+      {path: 'orders',component:LastOrdersComponent,canActivate:[VigilantGuard]},
+      {path: 'orders/:id',component:ResumeOrderComponent,canActivate:[VigilantGuard]},
+      {path: 'profile-company',component:ProfileCompanyComponent,canActivate:[VigilantGuard]},
+      {path: 'menu', component:MenuComponent,canActivate:[VigilantGuard]},
+      {path: 'menu/add-product', component:AddProductComponent,canActivate:[VigilantGuard]},
       {path: '**', redirectTo:'profile-company'}
     ]
   },

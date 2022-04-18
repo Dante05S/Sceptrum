@@ -5,7 +5,7 @@ const routes: Routes =
 [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'account',
     pathMatch: 'full'
   },
 
@@ -38,7 +38,10 @@ const routes: Routes =
   {
     path: 'order',
     loadChildren: () => import('./protected/pages/order/order.module').then(m => m.OrderModule)
-
+  },
+  {
+    path:'**',
+    redirectTo:'account'
   }
 ];
 

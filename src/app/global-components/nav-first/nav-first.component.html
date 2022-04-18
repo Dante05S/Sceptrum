@@ -2,12 +2,14 @@
   <nav class="nav">
     <div class="contain">
       <div class="logo">
-        <a href=""><img src="../../../assets/img/logo/logo.jpeg" alt="" /></a>
+        <a (click)="navigate('/home')"
+          ><img src="../../../assets/img/logo/logo.jpeg" alt=""
+        /></a>
       </div>
 
       <ul class="nav-menu">
         <li class="item">
-          <a>Registrar empresa</a>
+          <a (click)="navigate('/register-business')">Registrar empresa</a>
         </li>
         <li class="item">
           <div class="shopping-cart">
@@ -16,7 +18,7 @@
           </div>
         </li>
         <li class="item">
-          <a>Iniciar sesión</a>
+          <a r (click)="navigate('/login')">Iniciar sesión</a>
         </li>
       </ul>
     </div>

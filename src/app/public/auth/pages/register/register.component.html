@@ -1,27 +1,49 @@
 <app-nav-last></app-nav-last>
 
-<div class="formulario" >
-  <h2>Nombre</h2> <br>
-  <input type="text" placeholder="Escriba su nombre"> <br> <br>
-  <h2>Apellido</h2> <br>
-  <input type="text" placeholder="Escriba su apellido"> <br> <br>
-  <h2>Usuario</h2> <br>
-  <input type="text" placeholder="Escriba su usuario"> <br> <br>
-  <h2>Contraseña</h2> <br>
-  <input type="password" placeholder="Escriba su contraseña"><br> <br>
-  <h2>Confirmar contraseña</h2> <br>
-  <input type="password" placeholder="Escriba su contraseña"> <br> <br>
-  <h2>Dirección</h2> <br>
-  <input type="text" placeholder="Escriba su Direccion"><br> <br>
-  <h2>Telefóno</h2> <br>
-  <input type="text" placeholder="Escriba su telefono"> <br> <br> <br>
-  <input type="button" value="Registrarse" class="boton"> <br> <br> <br>
-  <h3>¿Ya tienes una cuenta? <a href="#"><span>Inicia sesión aquí</span></a></h3> <br>
-
+<form class="formulario">
+  <h2>Nombre</h2>
+  <br />
+  <input type="text" placeholder="Escriba su nombre" /> <br />
+  <br />
+  <h2>Apellido</h2>
+  <br />
+  <input type="text" placeholder="Escriba su apellido" /> <br />
+  <br />
+  <h2>Usuario</h2>
+  <br />
+  <input type="text" placeholder="Escriba su usuario" /> <br />
+  <br />
+  <h2>Contraseña</h2>
+  <br />
+  <input type="password" placeholder="Escriba su contraseña" /><br />
+  <br />
+  <h2>Confirmar contraseña</h2>
+  <br />
+  <input type="password" placeholder="Escriba su contraseña" /> <br />
+  <br />
+  <h2>Dirección</h2>
+  <br />
+  <input type="text" placeholder="Escriba su Direccion" /><br />
+  <br />
+  <h2>Telefóno</h2>
+  <br />
+  <input type="text" placeholder="Escriba su telefono" /> <br />
+  <br />
+  <br />
+  <input type="button" value="Registrarse" class="boton" /> <br />
+  <br />
+  <br />
+  <h3>
+    ¿Ya tienes una cuenta?
+    <a (click)="navigate('/login')"><span>Inicia sesión aquí</span></a>
+  </h3>
+  <br />
 
   <p>
-      Al registrarse estás aceptando los términos y <span>condiciones</span> y <span>políticas de
-      privacidad</span>
+    Al registrarse estás aceptando los términos y <span>condiciones</span> y
+    <span>políticas de privacidad</span>
   </p>
-</div> <br> <br>
- <app-footer></app-footer>
+</form>
+<br />
+<br />
+<app-footer></app-footer>
